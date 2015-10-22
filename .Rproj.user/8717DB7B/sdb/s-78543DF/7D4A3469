@@ -1,12 +1,12 @@
 {
-    "contents" : "gr <- 0\nkl <- 0\nfor(i in 1:10000000){\n  if(runif(1)^2 + runif(1)^2 > 1) gr <- gr + 1\n  else kl <- kl + 1\n}\nkl / gr\n\n\n\ntest <- function(x) x^2\ntest2 <- function(x) qbinom(x, 1, 0.5)\n",
+    "contents" : "gr <- 0\nkl <- 0\nfor(i in 1:10000000){\n  if(runif(1)^2 + runif(1)^2 > 1) gr <- gr + 1\n  else kl <- kl + 1\n}\nkl / gr\n\n\n\ntest <- function(x) x^2\ntest2 <- function(x) qbinom(x, 1, 0.5)\n\ndevtools::document()\ndevtools::load_all()\n?rejSamp\n\n",
     "created" : 1445509667263.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3655304573",
+    "hash" : "3786144066",
     "id" : "7D4A3469",
-    "lastKnownWriteTime" : 1445433977,
+    "lastKnownWriteTime" : 1445519712,
     "path" : "C:/Users/Domme/Desktop/misc.R",
     "project_path" : null,
     "properties" : {

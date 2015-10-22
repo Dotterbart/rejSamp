@@ -11,12 +11,12 @@ rejSamp(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.fact = 1)
 Function to be interpreted as probability density function.}
 
 \item{n}{[\code{integer}]\cr
-Amount of random numbers to be generated.}
+Amount of random numbers to be generated. Default is 1.}
 
 \item{min}{[\code{numeric}]\cr}
 
 \item{max}{[\code{numeric}]\cr
-Interval the generated random numbers are from.}
+Interval the generated random numbers are from. Default is (0, 1).}
 
 \item{g}{[\code{function}]\cr
 Probability density function of the instrumental distribution.}
@@ -25,7 +25,7 @@ Probability density function of the instrumental distribution.}
 Function that generates random numbers from the instrumental distribution.}
 
 \item{g.fact}{[\code{numeric}]\cr
-Factor for \code{g}.}
+Factor for \code{g}. Default is 1.}
 }
 \value{
 [\code{numeric}]\cr
@@ -39,7 +39,7 @@ If no instrumental distribution is specified, the uniform distribution is used.
 
 The call \code{g}(x) should produce the probability of the realisation x for the instrumental distribution \code{g}.
 
-The choice of \code{g.factor} should guarantee \code{f}(x) < \code{g.fact} * \code{g}(x).
+The choice of \code{g.fact} should guarantee \code{f(x) < g.fact * g(x)}.
 }
 \examples{
 test <- function(x) x^2
