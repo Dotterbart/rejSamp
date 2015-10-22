@@ -1,4 +1,4 @@
-Package: rejSam
+Package: rejSamp
 Type: Package
 Title: Generate random numbers by rejection sampling
 Version: 0.1
