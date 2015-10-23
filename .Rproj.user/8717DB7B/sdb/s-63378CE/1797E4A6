@@ -1,0 +1,17 @@
+{
+    "contents" : "gr <- 0\nkl <- 0\nfor(i in 1:10000000){\n  if(runif(1)^2 + runif(1)^2 > 1) gr <- gr + 1\n  else kl <- kl + 1\n}\nkl / gr\n\ndevtools::document()\ndevtools::load_all()\n?rejSamp\n\ntest <- function(x) x^2\nrejSamp(test, 10, -5000, 5000)\n\ntest3 = function(x) dbinom(x, 10, 0.5)\nr3 = function(x) rbinom(1, 10, 0.5)\nrejSamp(test3, n = 10, min = 0, max = 10)\nrejSamp(test, 10, 0, 10, test3, r3)\nstopifnot(is.numeric())\ntest3(0.7)\n\nlibrary(checkmate)\n\nlibrary(testthat)\n?testthat\n\ntest <- function(x) x^2\nxxx <- \"Hello\"\nrejSamp(test, 10, -5000, 5000)\nrejSamp(test, 0, -5000, 5000)\nrejSamp(test, 2.5, -5000, 5000)\nrejSamp(test, 10, -Inf, 5000)\nrejSamp(xxx, 10, -5000, 5000)\nrejSamp(test(5), 10, -5000, 5000)\nrejSamp(test, 10, -5000, 5000, test, function(x) runif(1,1,10), 2)\nrejSamp(test, 10, -5000, 5000, test, function(x) runif(1,1,10), 1e-7)\nrejSamp(test, 10, -5000, 5000, xxx, function(x) runif(1,1,10), 2)\nrejSamp(test, 10, -5, 5, test, function(x) runif(1,1,10), 2)\nrejSamp(test, 10, -5000, 5000, test, function(x) runif(7,1,10), 2)\n\n\n",
+    "created" : 1445605536941.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "364470495",
+    "id" : "1797E4A6",
+    "lastKnownWriteTime" : 1445607350,
+    "path" : "C:/Users/Domme/Desktop/misc.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

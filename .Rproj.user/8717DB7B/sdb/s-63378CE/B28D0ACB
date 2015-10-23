@@ -1,0 +1,18 @@
+{
+    "contents" : "library(testthat)\n\ntest_check(\"rejSamp\")\n",
+    "created" : 1445605064693.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1670970794",
+    "id" : "B28D0ACB",
+    "lastKnownWriteTime" : 1445605594,
+    "path" : "~/GitHub/rejSamp/tests/test.R",
+    "project_path" : "tests/test.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

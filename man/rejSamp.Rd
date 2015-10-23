@@ -4,7 +4,8 @@
 \alias{rejSamp}
 \title{Generate random numbers by rejection sampling}
 \usage{
-rejSamp(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.fact = 1)
+rejSamp(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL,
+  g.factor = 1)
 }
 \arguments{
 \item{f}{[\code{function}]\cr
