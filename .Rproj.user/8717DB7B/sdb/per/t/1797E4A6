@@ -1,0 +1,17 @@
+{
+    "contents" : "gr <- 0\nkl <- 0\nfor(i in 1:10000000){\n  if(runif(1)^2 + runif(1)^2 > 1) gr <- gr + 1\n  else kl <- kl + 1\n}\nkl / gr\n\ndevtools::document()\ndevtools::load_all()\n?rejSamp\n\ntest <- function(x) x^2\nrejSamp(test, 10, -5000, 5000)\n\ntest3 = function(x) dbinom(x, 10, 0.5)\nr3 = function(x) rbinom(1, 10, 0.5)\nrejSamp(test3, n = 10, min = 0, max = 10)\nrejSamp(test, 10, 0, 10, test3, r3)\nstopifnot(is.numeric())\ntest3(0.7)\n\nlibrary(checkmate)\n\nlibrary(testthat)\n?testthat\n\ny = curve(test, -1, 1)\nt1 = rejSamp(test, 100000, -1, 1)\nhist(t1, freq = FALSE)\nlines(y)\n\ntest2 = function(x) x\nt2 = rejSamp(test2, 100000, 0, sqrt(2))\nhist(t2, freq = FALSE)\nabline(0, 1)\n\ntest3 = function(x) 3*x^3 - 6*x^2 + 5*x\ny = curve(test3, 0, 2)\nt3 = rejSamp(test3, 100000, 0, 2)\nhist(t3, freq = FALSE, ylim = c(0,6))\nlines(y)\n",
+    "created" : 1445605536941.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1783867205",
+    "id" : "1797E4A6",
+    "lastKnownWriteTime" : 1445968856,
+    "path" : "C:/Users/Domme/Desktop/misc.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

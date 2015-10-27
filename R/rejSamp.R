@@ -48,16 +48,17 @@ rejSamp <- function(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.factor = 
     rg = function(x) runif(1, min, max)
     g.factor = (max - min) * optimize(f, interval = c(min, max), maximum = TRUE)$objective
   }
-  for(i in 1:n) {
+  rej.helper = function() {
     j = TRUE
     while(j) {
       y = rg()
       z = runif(1)
       if (f(y) > g.factor * z * g(y)) {
-        numbers[i] <- y
-        j = FALSE
+        return(y)
       }
     }
   }
-  return(numbers)
+  return(replicate(n, rej.helper()))
 }
+
+
