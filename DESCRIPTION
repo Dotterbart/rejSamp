@@ -8,4 +8,4 @@ Description: With a function and an intervall given, the function is treated as 
              density function. Then random numbers from it are created using rejection sampling.
 License: What license is it under?
 LazyData: TRUE
-Imports: checkmate
+Imports: checkmate, testthat
