@@ -40,7 +40,7 @@ If no instrumental distribution is specified, the uniform distribution is used.
 
 The call \code{g}(x) should produce the probability of the realisation x for the instrumental distribution \code{g}.
 
-The choice of \code{g.fact} should guarantee \code{f(x) < g.fact * g(x)}.
+The choice of \code{g.factor} should guarantee \code{f(x) < g.factor * g(x)}.
 }
 \examples{
 test <- function(x) x^2

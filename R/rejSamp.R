@@ -20,7 +20,7 @@
 #'
 #' The call \code{g}(x) should produce the probability of the realisation x for the instrumental distribution \code{g}.
 #'
-#' The choice of \code{g.fact} should guarantee \code{f(x) < g.fact * g(x)}.
+#' The choice of \code{g.factor} should guarantee \code{f(x) < g.factor * g(x)}.
 #' @examples
 #' test <- function(x) x^2
 #' rejSamp(f = test, n = 10, min = -1, max = 1)
