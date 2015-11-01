@@ -25,7 +25,7 @@ Probability density function of the instrumental distribution.}
 \item{rg}{[\code{function}]\cr
 Function that generates random numbers from the instrumental distribution.}
 
-\item{g.fact}{[\code{numeric}]\cr
+\item{g.factor}{[\code{numeric}]\cr
 Factor for \code{g}. Default is 1.}
 }
 \value{

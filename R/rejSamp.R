@@ -11,7 +11,7 @@
 #'  Probability density function of the instrumental distribution.
 #' @param rg  [\code{function}]\cr
 #'  Function that generates random numbers from the instrumental distribution.
-#' @param g.fact [\code{numeric}]\cr
+#' @param g.factor [\code{numeric}]\cr
 #'  Factor for \code{g}. Default is 1.
 #' @return [\code{numeric}]\cr
 #'  Random numbers from the function \code{f} interpreted as probality density function on the interval (\code{min}, \code{max}).
