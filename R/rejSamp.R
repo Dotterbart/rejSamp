@@ -13,7 +13,7 @@
 #'  Function that generates random numbers from the instrumental distribution.
 #' @param g.factor [\code{numeric}]\cr
 #'  Factor for \code{g}. Default is 1.
-#' @return [\code{numeric}]\cr
+#' @return
 #'  Random numbers from the function \code{f} interpreted as probality density function on the interval (\code{min}, \code{max}).
 #' @details
 #' If no instrumental distribution is specified, the uniform distribution is used.
