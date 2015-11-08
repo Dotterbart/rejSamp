@@ -1,17 +1,17 @@
 #' Generate random numbers by rejection sampling
 #'
-#' @param f [\code{function}]\cr
+#' @param f [\code{function}]
 #'  Function to be interpreted as probability density function.
-#' @param n  [\code{integer}]\cr
+#' @param n  [\code{integer(1)}]
 #'  Amount of random numbers to be generated. Default is 1.
-#' @param min [\code{numeric}]\cr
-#' @param max [\code{numeric}]\cr
+#' @param min [\code{numeric(1)}]
+#' @param max [\code{numeric(1)}]
 #'  Interval the generated random numbers are from. Default is (0, 1).
-#' @param g [\code{function}]\cr
+#' @param g [\code{function}]
 #'  Probability density function of the instrumental distribution.
-#' @param rg  [\code{function}]\cr
+#' @param rg  [\code{function}]
 #'  Function that generates random numbers from the instrumental distribution.
-#' @param g.factor [\code{numeric}]\cr
+#' @param g.factor [\code{numeric(1)}]
 #'  Factor for \code{g}. Default is 1.
 #' @return
 #'  Random numbers from the function \code{f} interpreted as probality density function on the interval (\code{min}, \code{max}).
