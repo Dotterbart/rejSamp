@@ -4,11 +4,13 @@ Title: Generate random numbers by rejection sampling
 Version: 0.1
 Date: 2015-10-21
 Authors@R: person("Dominik", "Lenk", email = "dominik.lenk@tu-dortmund.de", role = c("aut", "cre"))
-Description: With a function and an intervall given, the function is treated as a probability
-  density function. Then random numbers from it are created using rejection sampling.
+Description: With a function and an intervall given, the function is treated as
+    a probability density function. Then random numbers from it are created using
+    rejection sampling.
 License: What license is it under?
 LazyData: TRUE
-Imports: 
-  checkmate
+Imports:
+    checkmate
 Suggests:
-  testthat
+    testthat
+RoxygenNote: 5.0.0

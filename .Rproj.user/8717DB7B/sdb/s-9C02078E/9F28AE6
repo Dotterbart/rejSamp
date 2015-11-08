@@ -1,12 +1,12 @@
 {
-    "contents" : "Package: rejSamp\nType: Package\nTitle: Generate random numbers by rejection sampling\nVersion: 0.1\nDate: 2015-10-21\nAuthors@R: person(\"Dominik\", \"Lenk\", email = \"dominik.lenk@tu-dortmund.de\", role = c(\"aut\", \"cre\"))\nDescription: With a function and an intervall given, the function is treated as a probability\n  density function. Then random numbers from it are created using rejection sampling.\nLicense: What license is it under?\nLazyData: TRUE\nImports: \n  checkmate\nSuggests:\n  testthat\n",
+    "contents" : "Package: rejSamp\nType: Package\nTitle: Generate random numbers by rejection sampling\nVersion: 0.1\nDate: 2015-10-21\nAuthors@R: person(\"Dominik\", \"Lenk\", email = \"dominik.lenk@tu-dortmund.de\", role = c(\"aut\", \"cre\"))\nDescription: With a function and an intervall given, the function is treated as\n    a probability density function. Then random numbers from it are created using\n    rejection sampling.\nLicense: What license is it under?\nLazyData: TRUE\nImports:\n    checkmate\nSuggests:\n    testthat\nRoxygenNote: 5.0.0\n",
     "created" : 1445507778167.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1422749921",
+    "hash" : "1387083635",
     "id" : "9F28AE6",
-    "lastKnownWriteTime" : 1446981902,
+    "lastKnownWriteTime" : 1446982636,
     "path" : "~/GitHub/rejSamp/DESCRIPTION",
     "project_path" : "DESCRIPTION",
     "properties" : {
