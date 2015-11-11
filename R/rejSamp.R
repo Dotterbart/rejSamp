@@ -26,8 +26,8 @@
 #' rejSamp(f = test, n = 10, min = -1, max = 1)
 
 rejSamp = function(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.factor = 1) {
-  checkmate::assertFunction(f)
-  checkmate::assertCount(n, positive = TRUE)
+  assertFunction(f)
+  assertCount(n, positive = TRUE)
   if (!is.null(g)) {
     assertFunction(g)
     assertFunction(rg)
