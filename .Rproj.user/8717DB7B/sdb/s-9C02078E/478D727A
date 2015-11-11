@@ -1,0 +1,17 @@
+{
+    "contents" : "# rejSamp\nGenerate random numbers by rejection sampling\n\n![alt tag](https://travis-ci.org/Dotterbart/rejSamp.svg?branch=master)\n",
+    "created" : 1447253900655.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "17777140",
+    "id" : "478D727A",
+    "lastKnownWriteTime" : 1446981902,
+    "path" : "~/GitHub/rejSamp/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "markdown"
+}
