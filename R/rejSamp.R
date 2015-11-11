@@ -26,16 +26,16 @@
 #' rejSamp(f = test, n = 10, min = -1, max = 1)
 
 rejSamp = function(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.factor = 1) {
-  assertFunction(f)
-  assertCount(n, positive = TRUE)
+  checkmate::assertFunction(f)
+  checkmate::assertCount(n, positive = TRUE)
   if (!is.null(g)) {
-    assertFunction(g)
-    assertFunction(rg)
-    assertNumber(rg(), lower = min, upper = max)
+    checkmate::assertFunction(g)
+    checkmate::assertFunction(rg)
+    checkmate::assertNumber(rg(), lower = min, upper = max)
   }
-  assertNumber(min, finite = TRUE)
-  assertNumber(max, finite = TRUE)
-  assertNumber(g.factor, lower = 1e-6, finite = TRUE)
+  checkmate::assertNumber(min, finite = TRUE)
+  checkmate::assertNumber(max, finite = TRUE)
+  checkmate::assertNumber(g.factor, lower = 1e-6, finite = TRUE)
   if (min > max) {
     temp = max
     max = min
