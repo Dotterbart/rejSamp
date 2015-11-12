@@ -1,5 +1,6 @@
 #' Generate random numbers by rejection sampling
 #'
+#' @import checkmate
 #' @param f [\code{function}]\cr
 #'  Function to be interpreted as probability density function.
 #' @param n  [\code{integer(1)}]\cr
@@ -26,16 +27,16 @@
 #' rejSamp(f = test, n = 10, min = -1, max = 1)
 
 rejSamp = function(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.factor = 1) {
-  checkmate::assertFunction(f)
-  checkmate::assertCount(n, positive = TRUE)
+  assertFunction(f)
+  assertCount(n, positive = TRUE)
   if (!is.null(g)) {
-    checkmate::assertFunction(g)
-    checkmate::assertFunction(rg)
-    checkmate::assertNumber(rg(), lower = min, upper = max)
+    assertFunction(g)
+    assertFunction(rg)
+    assertNumber(rg(), lower = min, upper = max)
   }
-  checkmate::assertNumber(min, finite = TRUE)
-  checkmate::assertNumber(max, finite = TRUE)
-  checkmate::assertNumber(g.factor, lower = 1e-6, finite = TRUE)
+  assertNumber(min, finite = TRUE)
+  assertNumber(max, finite = TRUE)
+  assertNumber(g.factor, lower = 1e-6, finite = TRUE)
   if (min > max) {
     temp = max
     max = min
