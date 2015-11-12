@@ -24,6 +24,7 @@
 #' @examples
 #' test <- function(x) x^2
 #' rejSamp(f = test, n = 10, min = -1, max = 1)
+#' @export
 
 
 rejSamp = function(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.factor = 1) {
