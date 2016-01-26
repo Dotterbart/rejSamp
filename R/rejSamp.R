@@ -50,8 +50,7 @@ rejSamp = function(f, n = 1, min = 0, max = 1, g = NULL, rg = NULL, g.factor = 1
     g.factor = (max - min) * optimize(f, interval = c(min, max), maximum = TRUE)$objective
   }
   rej.helper = function() {
-    j = TRUE
-    while(j) {
+    repeat {
       y = rg()
       z = runif(1)
       if (f(y) > g.factor * z * g(y)) {
